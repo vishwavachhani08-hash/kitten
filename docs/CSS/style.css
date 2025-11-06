@@ -1,0 +1,184 @@
+/* 🌍 Base Style */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fffafc;
+  color: #2c3e50;
+  scroll-behavior: smooth;
+}
+
+/* ✨ Hero Section */
+.hero {
+  background: linear-gradient(135deg, #ffcc70, #ff9a8b);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+.hero-text {
+  max-width: 800px;
+  margin: auto;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  background: white;
+  color: #d35400;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #fef5e7;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* 💛 About Section */
+.about {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  animation: fadeUp 1s ease;
+}
+
+/* 🐱 Gallery Section */
+.gallery {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 10px 0 5px;
+  color: #d35400;
+}
+.card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🧠 Facts */
+.facts {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+.facts ul {
+  list-style: none;
+  padding: 0;
+}
+.facts li {
+  background: #fdebd0;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.facts li:hover {
+  background: #f8c471;
+}
+
+/* 💌 Contact */
+.contact {
+  text-align: center;
+  background: #fef5e7;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 60px auto;
+  width: 80%;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+.contact textarea {
+  resize: vertical;
+  height: 100px;
+}
+.contact button {
+  background: #ff9a8b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  background: #ff7e67;
+  transform: scale(1.05);
+}
+
+/* 🔝 Scroll Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff9a8b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+  transition: all 0.3s ease;
+}
+#scrollTopBtn:hover {
+  background: #ff7e67;
+  transform: scale(1.1);
+}
+
+/* 🐾 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #d35400;
+  color: white;
+  margin-top: 50px;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
